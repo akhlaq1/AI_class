@@ -1,6 +1,10 @@
 1.write a flask application
 2. Deploy it in heroku
 	2.1 Container registry & Runtime Docker (read it)
+	2.2 
+
+https://devcenter.heroku.com/articles/container-registry-and-runtime1
+
 3. http://flask.pocoo.org/docs/0.12/quickstart/
 4. https://github.com/Robpol86/Flask-Large-Application-Example
-5. 
+5. close hypervisor and run docker on virtual box for better support
