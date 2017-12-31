@@ -1,0 +1,6 @@
+1.write a flask application
+2. Deploy it in heroku
+	2.1 Container registry & Runtime Docker (read it)
+3. http://flask.pocoo.org/docs/0.12/quickstart/
+4. https://github.com/Robpol86/Flask-Large-Application-Example
+5. 
