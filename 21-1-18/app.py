@@ -1,4 +1,4 @@
-from flask import Flask, render_template,send_file,url_for
+from flask import Flask, render_template,send_file,url_for,request
 
 app=Flask(__name__)
 
@@ -6,10 +6,22 @@ app=Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route("/form")
+def form():
+    return render_template('form.html')
+
 
 @app.route("/user/<name>")
 def user(name):
     return "Hello Dear :"+name
+
+
+@app.route("/info",methods=['GET','POST'])
+def info(name):
+    if request.method=="GET":
+        return "Hello GET waalo"+request.form['user']
+    else:
+        return "Hello POST waalo"+request.form['user']
 
 
 @app.route("/about")
